@@ -3,7 +3,7 @@ variable "project_name" {
 }
 
 variable "env" {
-  default = "dev"
+  default = "Dev"
 }
 
 variable "common_tags" {

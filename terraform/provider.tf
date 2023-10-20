@@ -7,12 +7,15 @@ terraform {
   }
 
   backend "s3" {
-    bucket   = "roboshop-remote-state"
+    bucket   = "remote-devops-state"
     key = "catalogue-dev"
     region = "us-east-1"
-    dynamodb_table = "roboshop-locking"
+    dynamodb_table = "roboshop-remote-lock"
+    # access_key = "AKIASGS2UUI55EU5ZLNM" 
+    # secret_key = "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"
   }
 }
+
 
 provider "aws" {
   # Configuration options
